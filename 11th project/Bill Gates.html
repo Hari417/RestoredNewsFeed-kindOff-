@@ -1,0 +1,1016 @@
+<html>
+<head>
+    <title>Bill Gates</title>
+    
+    <div style="background-color:#fbff4a "class ="top">
+        
+
+       <span class="toppc">
+        <a href="#Agenda"><a href="third.html" style="margin-right: 20px" class="agenda"><font size="5" face="Courier New" color="black"><strong> Agenda</strong> 
+        </font></a></a>
+
+        <a href="" style="margin-right: 20px" class="workshop"><font size="5" face="Courier New" color="black">
+            <strong> Workshop</strong> </font></a>
+        
+        <div class="dropdown">
+              <button class="dropbtn"><font  face="Courier New" color="black">
+                <strong>Our Works</strong></font>
+                <i class="fa fa-caret-down"></i>
+              </button>
+          <div class="dropdown-content">
+            <a href="second.html">Live Billioners List</a>
+            <a href="jeff bezos.html">Jeff Bezos</a>
+            <a href="Bill Gates.html">Bill Gates</a>
+            <a href="">Warren Buffet</a>
+          </div>
+        </div>
+
+     <a href="home2.html#BillionersNews" style="margin-right: 20px" class="BillionersNews"><font size="5" face="Courier New" color="black"><strong>Billioners News</strong></font></a>
+
+
+    <a href="home2.html" class="Home" style="margin-right: 20px;" style="text-decoration: none;">
+            <font size="5" face="Courier New" color="black"><strong>Home</strong></font></a>
+      </span>  
+
+
+      
+
+
+
+    </div>
+
+    <script src="navbar.js"></script>
+    <div class="formobiles" id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul>
+            <li class="firstslide">Home</li>
+            <a href="home2.html#BillionersNews"><li>Billionares News</li></a>
+                        
+
+                        <li><div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="second.html">Live Billioners List</a>
+    <a href="jeff bezos.html">Jeff Bezos</a>
+    <a href="Bill Gates.html">Bill Gates</a>
+    <a href="#">Warren Buffet</a>
+  </div>
+</div>
+<span style="font-size:22px;cursor:pointer" onclick="openNav()"> Our Works</span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</li>
+
+
+            <a href=""><li>Workshop</li></a>
+            <a href=""><li>Agenda</li></a>
+        </ul>
+    </div>
+
+
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    
+    <style type="text/css">
+
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            scroll-behavior: smooth;
+        }
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(46, 64, 83); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(93, 109, 126s ); 
+}
+
+
+        @media only screen and (max-width: 768px){
+            
+
+.dropdown {
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  
+  border-radius: 3px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  color: black;
+  background-color:#d0d3d4 ;
+  border-color: transparent;
+  margin-right: 10px;
+  font-size: 23;
+  margin-top: -3px;
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#BDC3C7;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+.formobiles{
+
+  top: -5px;
+  height: 100%;
+}
+
+#sidebar{
+    position: absolute;
+    width:50%;
+    height: 100%;
+    background-color: #000;
+    left: -50%;
+    transition: .4s; 
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 24px;
+
+
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 110%;
+    
+
+}
+
+    .toggle-btn span{
+        width: 45px;
+        height: 4px;
+        background: #000;
+        display: block;
+       margin-top: 4px; 
+
+    }
+
+.firstslide{
+    margin-top: 10%;
+}
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 40%;
+  background-color: rgb(39, 55, 70 );
+  background-color: rgba(39, 55, 70 , );
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 0.4s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 20px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+            .top{
+            background-color: #fbff4a;
+            padding: 20px;
+            align-items: center;
+            align-content: center;
+            height: 3%;
+            position: static;
+            width: 100%;
+        }
+        .Home{
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 0px;
+            border-radius:3px;
+
+        }
+        .agenda{
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 0px;
+            border-radius:3px;
+
+
+        }
+        .BillionersNews{
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 0px;
+            border-radius:3px;
+        }
+        .workshop{
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 0px;
+            border-radius:3px;
+        }
+        .toppc{
+            display: none;
+        }
+
+        
+        .box1{
+            background-image:url(background1.png);
+            background-size: cover; 
+            margin-left: -8px;
+            margin-right: -9px;
+            
+        }
+         
+        .box1sub1{
+            background-color: #ecf0f1;
+            height:;
+            background-size: cover;
+            width: 100%;
+            margin:auto;
+        }
+
+        .headsub1{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        .headsub2{
+            color: rgb(23,32,42);
+        }
+        .headsub3{
+            color: #515a5a;
+            margin-left: 40px;
+            margin-top: 10px;
+    }
+
+        .head2sub1{
+            color: rgb(23,32,42);
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .head2sub2{
+            color: rgb(23,32,42);
+            margin-left: 20px;
+            }
+        .head2sub3{
+            color: rgb(0,0,0);
+            margin-left: 20px;
+            }
+
+        .billimg{
+            background-image: url();
+            height: auto;
+            width: 97%;
+            margin-left: 15px;
+            margin-top: 4px;
+            border-radius: 8px;
+        }
+
+        .body1sub1{
+            margin-top: 15px;
+        }
+
+        .body1sub1p{
+            margin-left: 20px;
+            width: 95%
+        }
+
+        .body1box1{
+            display: none;
+        }
+
+        .body1sub1div2{
+            margin-left: 20px; 
+            width: 95%;
+            font-size: 22;
+           
+        }
+        .body1sub1p2{
+            font-size: 22;
+            width: 95%;
+        }
+        .body1sub1p3{
+            margin-left:-300px;
+            margin-top:5px;
+            width: 95%;
+        }
+        .body1sub1div3{
+           margin-left: 20px;
+           width:95%;
+           margin-top: 50px;
+           font-size: 22; 
+        }
+        .body1sub1div4{
+            margin-top: 40px;
+            margin-left: 20px;
+            width: 95%;
+        }
+        .body1sub1span41{
+            font-size: 22;
+        }
+        .body1sub1span42{
+            font-size: 22;
+        }
+        .body1sub1span43{
+            font-size: 22;
+        }
+
+        .body1sub1divsub{
+            width: 100%;
+        }
+
+        .body1sub1div5{
+            margin-top: 40px;
+            width: 100%;
+        }
+        .body1sub1phead5{
+         font-size: 22;
+         width: 100%;   
+        }
+        .body1sub1span5{
+         font-size: 22;
+        }
+        .body1sub1p5s1{
+            width:95%;
+            font-size: 22;
+            color: rgb(242, 243, 244 );
+        }
+        .body1sub1p5s12{
+            width: 95%;
+            font-size: 22;
+            color: rgb(242, 243, 244);
+        }
+
+        .youtubevideo{
+            border-radius:4px;
+            margin-top: 20px;
+            height:70%;
+            width:90%;
+        }
+
+        .footer{
+            background-color: #dedede;
+            background-size: cover;
+            width: 101%;            
+            height: 207px;
+            margin-left: -4px;
+            }
+
+        a{
+            text-decoration: none;
+        }
+}
+
+
+        @media only screen and (min-width: 768px){
+        
+
+             .dropdown {
+            float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  
+  border-radius: 3px;
+  color: black;
+  background-color:#d0d3d4 ;
+  border-color: transparent;
+  margin-right: 15px;
+  font-size: 23;
+  padding:5px;
+  padding-bottom: 7px;
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#BDC3C7;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.formobiles{
+  display: none;
+}
+
+#sidebar{
+    position: absolute;
+    width:300px;
+    height: 100%;
+    background-color: #000;
+    left: -300px;
+    transition: .4s; 
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 24px;
+
+
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 330px;
+
+}
+
+    .toggle-btn span{
+        width: 45px;
+        height: 4px;
+        background: #000;
+        display: block;
+        margin-top:4px; 
+
+    }
+
+
+
+
+
+
+
+        .top{
+            background-color: #fbff4a;
+            padding: 20px;
+            align-items: center;
+            align-content: center;
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            position: fixed;
+            width: 100%;
+        }
+        .Home{
+            float: right;
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 5px;
+            border-radius:3px;
+
+        }
+        .agenda{
+            float: right;
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 5px;
+            border-radius:3px;
+
+
+        }
+        .BillionersNews{
+            float: right;
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 5px;
+            border-radius:3px;
+        }
+        .workshop{
+            float: right;
+            background-color: #d0d3d4;
+            border-color:transparent;
+            border-style: solid;
+            padding: 5px;
+            border-radius:3px;
+        }
+
+
+        
+        .box1{
+            background-image:url(background1.png);
+            background-size: cover; 
+            margin-left: -8px;
+            margin-right: -9px;
+            
+        }
+         
+        .box1sub1{
+            background-color: #ecf0f1;
+            height:;
+            background-size: cover;
+            width: 90%;
+            margin:auto;
+        }
+
+        .headsub1{
+            margin-top: 80px;
+            margin-left: 120px;
+        }
+
+        .headsub2{
+            color: rgb(23,32,42);
+        }
+        .headsub3{
+            color: #515a5a;
+            margin-left: 125px;
+            margin-top: -5px;
+
+        }
+
+        .head2sub1{
+            color: rgb(23,32,42);
+            margin-left: 584px;
+            margin-top: -280px;
+        }
+        .head2sub2{
+            color: rgb(23,32,42);
+            margin-left: 584px;
+            margin-top: 10px;
+            }
+        .head2sub3{
+            color: rgb(0,0,0);
+            margin-left: 584px;
+            margin-top: 10px;
+            }
+
+        .billimg{
+            background-image: url();
+            height: 300px;
+            width: 480px;
+            margin-left: 100px;
+            border-color: rgb(40, 55, 71);
+            border-style: solid;
+            margin-top: 10px;
+            border-radius: 8px;
+
+        }
+
+        .body1sub1{
+            margin-top: 200px;
+        }
+
+        .body1sub1p{
+            margin-left: 100px;
+            width: 70%;
+            font-size: 22;
+        }
+
+        .body1box1{
+            width: 18%;
+            height: 260px;
+            float: left;
+            margin-right: 10px;
+            margin-left: 100px;
+            background-color: #D0D3D4;
+        }
+
+        .link{
+            margin-top: 20px;
+        }
+
+        .link1{
+            font-family:  serif ;
+           font-size:22 ;
+           margin-top: 15px;
+        }
+
+        .link2{
+            font-family: serif ;
+            font-size:22 ;
+            margin-top: 15px;
+        }
+
+        .link3{
+            font-family: serif ;
+             font-size:22 ;
+             margin-top: 15px;
+        }
+
+        .link4{
+            font-family:  serif ;
+            font-size:22 ;
+            margin-top: 15px;
+        }
+
+        .link5{
+            font-family: serif ;
+            font-size:22 ;
+            margin-top: 15px;
+        }
+        .body1sub1div2{
+            margin-left: 100px; 
+            width: 70%;
+            font-size: 22;
+           
+        }
+        .body1sub1p2{
+            
+            width: 70%;
+        }
+        .body1sub1p3{
+            margin-left:-300px;
+            margin-top:5px;
+            width: 1000px;
+        }
+        .body1sub1div3{
+           margin-left: 100px;
+           width:70%;
+           margin-top: 50px;
+           font-size: 22; 
+        }
+        .body1sub1div4{
+            margin-top: 40px;
+            margin-left: 100px;
+            width: 74%;
+        }
+        .body1sub1span41{
+            font-size: 22;
+        }
+        .body1sub1span42{
+            font-size: 22;
+        }
+        .body1sub1span43{
+            font-size: 22;
+        }
+
+        .body1sub1divsub{
+            width: 100%;
+        }
+
+        .body1sub1div5{
+            margin-top: 40px;
+            width: 100%;
+        }
+        .body1sub1phead5{
+         font-size: 22;
+         width: 100%;   
+        }
+        .body1sub1span5{
+         font-size: 22;
+        }
+        .body1sub1p5s1{
+            width:70%;
+            font-size: 22;
+            color: rgb(242, 243, 244 );
+        }
+        .body1sub1p5s12{
+            width: 70%;
+            font-size: 22;
+            color: rgb(242, 243, 244);
+        }
+
+        .body1sub1div6{
+            margin-top: 40px;
+            margin-left: 0px;
+            width: 100%;
+        }
+        .body1sub1p6{
+            font-size: 22;
+        }
+
+        .youtubevideo{
+            border-radius:4px;
+            margin-top: 20px;
+            height:70%;
+            width:90%;
+        }
+
+        .footer{
+            background-color: #dedede;
+            background-size: cover;
+            width: 100%;            
+            height: 207px;
+            }
+
+        a{
+            text-decoration: none;
+        }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <br>
+        <div class="box1sub1">
+            <br>
+            <div>
+                
+                <div><p class="headsub1"><font size="7" class="headsub2" face="oswald">#Bill Gates</font></p>
+                     <p class="headsub3"><font size="2" face="arial"> President,Chairman and Co-Founder of Microsoft</font></p>
+                </div>
+                <div class="billdivimg"><img src="E:\bill gates page.jpg" class="billimg"></div>
+                <div>
+                    <p class="head2sub1"><font face="Times" size="5"><u>Worlds Richest Man</u></font></p>
+                    <p class="head2sub2"><font face="Times" size="4"> NET WORTH </font></p>
+                    <p class="head2sub3"><font face="Impact" size="6">$144.9 Billion</font><font size="2" face="arial" style="color:rgb(23,32,42); margin-left: 3px;">as of sep/5/2020 </font></p>
+                   
+
+                </div>
+                <div class="body1sub1">
+                <p class="body1sub1p" style="font-size: 22"><font face="Times" ><i>William Henry Gates</i>(born October 28, 1995) is an American Buisness magnate, and an Entreprenueur, who is best known as the Co-Founder of <strong>Microsoft.</strong> The company made him one of the richest man in the world..</font></p>
+
+            <br>
+            <br>
+            <div class="body1box1">
+                <br>
+                <br>
+                <center>
+                <p class="link1"><a href="#Earlylife"><font>Early Life</font></a></p>
+                <p class="link2"><a href="#Success"><font>Success Story of Amazon</font></a></p>
+                <p class="link3"><a href="#OtherCompanies"><font>Other Companies</font></a></p>
+                <p class="link4"><a href="#Setbacks"><font>Setbacks</font></a></p>
+                <p class="link5"><a href=""><font></font></a></p>
+                </center>
+                
+                
+            </div>
+
+            <a name="Earlylife"></a>
+            <div class="body1sub1div2">
+
+                <p class="body1sub1p2"><font face="oswald" size="6"> Early Life</font></p>
+                <br>
+                <p><font face="Times" >Blill Gates is the son of William H. Gates Sr.(1925-2020) and Mary Maxwell Gates(1929-1994). Gates has an older sister Kristianne and a yonger sister Libby. Bill Gates's parents wanted hin pursue a law carrier. At the age of 13 he joined in a private Lakeside prep school, where he wrote his first program.   </font></p>
+                <br>
+                <p><font face="Times" >  When Bill Gtes was in his 8th grade, his school's Mothers' Club conducted a rummage sale and used the money collected to buy a Teletype Model 33 ASR terminal and a block of computer time on a General Electric (GE) computer for the benifit  students. Bill Gates was interested to program the <i>BASIC</i>, and he was excused from maths classes to pursue his intrests on computer science. He used this computer to write his first program which allowed users to play against the computer.     </font></p> 
+
+                <br>
+                <p><font face="Times">  Gates graduated from Lakeside in 1973. He scored 1590 out of 1600 on the college SAT test, a feat of intellectual achievement that he boasted about for several years when introducing himself to new people.</font></p>
+                <br>
+
+                <p><font face="Times">Gates enrolled at Harvard University to pursue his carrier in law because of his parents in 1973. Two years later gates dropped out of college to pursue his interest in microsoft with Paul Allen.</font></p>
+            </div>
+
+            <a name="Success"></a>
+            <div class="body1sub1div3">
+                <p class="body1sub1p3head"><font face="oswald" size="6 " >Success Story of Microsoft</font></p>
+                <br>
+                <p class="body1sub1p31"><font face="Times "> 
+                   In 1975 Allan Paul and bill Gates named their partnership "Micro-Soft", a combination of "microcomputer" and "software", and they set up their first office in Albuquerque.They dropped the hyphen within a year of its founding, and, officialy registered its name as "Microsoft"on November 26, 1976. The companie's first project was a BASIC software which ran on The Altair Computer.  
+                </font></p>
+
+                <br>
+                <p><font face="Times"> Microsoft's Altair BASIC came out with a huge success, but Gates later found out that a pre-market copy has been leaked out. Over 90% of the users who were using BASIC in Altair computer had not paid for the software.   </font></p>
+
+                <br>
+                 Microsoft's big break was in 1980, when a partnership was formed with IBM which resulted in Microsoft providing a crucial operating system, DOS, for IBM PCs.
+                <br>
+                <p><font face="Times"> In 1990, Gates showed the future plan for Microsoft with the introduction of Windows 3.0. 60 million copies of Windows had been sold now which effectively made Microsoft the sole keeper of the PC software standard.  </font></p>
+
+                <br>
+
+                <p><font face="Times">  Microsoft’s core customers, the corporate market preferred Windows XP as the operating system was fast, stable and secure. Windows 7 was released in 2009 to replace Vista which secured Microsoft’s lead in the software market. This was followed by the release of Windows 8 in Oct 2012 which included major changes to its OS platform and user interface to improve user experience on tablets. Since then Windows 8.1 has been released (October 2013) which contained more improvements. 
+
+                <br>
+                <br>
+                  </font></p>               
+            
+            </div>
+
+            <a name="OtherCompanies"></a>
+             <div class="body1sub1div4">
+                <br>
+                <br>
+
+            <p class="body1sub1phead4"><font face="oswald" size="6">Other Companies</font></p>
+                <br>
+
+                <span class="body1sub1span41">
+                <p class="body1sub1p41" style="font-size: 25"><font face="cambria">Xbox</font></p>
+                <br>
+                
+                <p class="body1sub1p4s2"><font face="Times">  In 2001 Microsoft released the Xbox followed by Xbox Live in 2002. Both releases were very successful which placed Microsoft second in the video gaming market. 
+                The Xbox 360, released in 2005 was a very powerful gaming console while facing strong competition. Microsoft had to cut the prices of their gaming consoles to gain a higher market share due to competition. This was a successful move; the Xbox 360 was the most used game console in American homes.   </font></p>
+                <br>
+                <p class="body1sub1p4s3"><font face="Times">  The Xbox One was released on November 22, 2013, in North America, as the successor of the Xbox 360. The Xbox One competes with Sony's PlayStation 4 and Nintendo's Wii U and Switch as part of the eighth generation of video game consoles.   </font></p>
+                <br>
+                <p class="body1sub1p4s4"><font face="Times" >  The Xbox One has an emphasis on internet-based features, including the ability to record and stream gameplay, and the ability to integrate with a set-top box to watch cable or satellite TV through the console with an enhanced guide interface and Kinect-based voice control.  </font></p>
+                </span>
+                <br>
+                      
+
+                <center>
+                <iframe id="i_video"  class="youtubevideo" src="https://www.youtube.com/embed/MfrveGfxaX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                </center>
+
+                <br>
+                <br>
+                <span class="body1sub1span42">
+                <p class="body1sub1p42" style="font-size: 25"><font face="cambria" >Skype</font></p>
+                <br>
+
+                <p class="body1sub1p42s1"><font face="Times" >
+                 Microsoft acquired Skype in 2011 for $8.5 Billion; this was the largest acquisition in Microsoft’s history. Microsoft acquired Skype to compete with Apple’s Facetime and Google’s Voice. Microsoft planned to add Skype to its products such as Outlook, Xbox and Windows smartphones.     
+
+                </font></p>
+                <br>
+                <p class="body1sub1p42s2"><font face="Times">Markets are divided over whether the buy is the right strategy for Microsoft as Skype had recorded a net loss of about $7 million in the year ended December 31. There are analysts who think the biggest acquisition by Microsoft in history is a smart long-term strategy.</font></p>
+                </span>
+                <br>
+
+                <span class="body1sub1span43">
+                <div class="body1sub1divsub">
+                <p class="body1sub1p43" style="font-size: 25"><font face="cambria">Bezos Expeditions</font></p>
+                <br>
+
+                <p class="body1sub1p43s1"><font face="Times">    </font></p>
+                 
+                 <br>
+
+                 </div class= "body1sub1div5">
+                  
+
+
+                  <a name="Setbacks"></a>
+                 <div>
+                     <p class="body1sub1phead5"><font size="6" face="oswald">Setbacks</font></p>
+                    <br>
+                     <p><font>
+
+                             <ul><li>   </li></ul>
+                             
+                             <ul><li>   </li></ul>
+                             
+                             <ul><li>   </li></ul>
+
+                             <ul><li>   </li></ul>
+                             <ul><li>   </li></ul>
+                    
+                    </font></p>
+
+
+                     <p><font></font></p>
+                 </div>
+ 
+
+
+                </div>  
+            </div>
+        <br>
+        <br>    
+        </div>
+
+        <br>    
+    </div>
+    <div class="footer">
+    <label><font size="7" color="black"><center>Highlight</center></label>
+    <ul class="footer-links">
+        <center>
+        <a href="" ><font size="3" color="black" face="arial"><u>Terms and Conditions</u></font></a>
+        <a href="" ><font size="3" color="black" face="arial"><u>Contact Us</u></font></a>
+        <a href="" ><font size="3" color="black" face="arial"><u>Copyrights</u></font></a>
+        <a href="" ><font size="3" color="black" face="arial"><u>Send Us Feedback</u></font></a>
+    </center>
+    </ul>
+</div>
+
+
+
+
+</body>
+</html>

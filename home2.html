@@ -1,0 +1,1931 @@
+<html>
+<head>
+	<title>Home</title>
+	<div class ="top">
+
+        <span class="toppc">
+        <a href="#Agenda" style="margin-right: 20px" class="agenda"><font size="5" face="Courier New" color="white"> Agenda 
+        </font></a>
+
+        <a href="" style="margin-right: 20px" class="workshop"><font size="5" face="Courier New" color="white">
+             Workshop</font></a>
+        
+        <div class="dropdown">
+              <button class="dropbtn"><font  face="Courier New" color="white">
+                Our Works</font>
+                <i class="fa fa-caret-down"></i>
+              </button>
+          <div class="dropdown-content">
+            <a href="second.html"><font  face="Courier New" color="black">Live Billionaires List</font></a>
+            <a href="jeff bezos.html"><font  face="Courier New" color="black">Jeff Bezos</font></a>
+            <a href="Bill Gates.html"><font  face="Courier New" color="black">Bill Gates</font></a>
+            <a href=""><font  face="Courier New" color="black">Warren Buffet</font></a>
+          </div>
+        </div>
+
+     <a href="home2.html#BillionersNews" style="margin-right: 20px" class="BillionersNews"><font size="5" face="Courier New" color="white">Billioners News</font></a>
+
+
+    <a href="home2.html" class="Home" style="margin-right: 20px;" style="text-decoration: none;">
+            <font size="5" face="Courier New" color="white">Home</font></a>
+      </span>  
+
+
+      
+
+
+
+    </div>
+
+    <script src="navbar.js"></script>
+    <div class="formobiles" id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul>
+            <li class="firstslide">Home</li>
+            <a href="home2.html#BillionersNews"><li>Billionares News</li></a>
+                        
+
+                        <li><div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="second.html">Live Billioners List</a>
+    <a href="jeff bezos.html">Jeff Bezos</a>
+    <a href="Bill Gates.html">Bill Gates</a>
+    <a href="#">Warren Buffet</a>
+  </div>
+</div>
+<span style="font-size:22px;cursor:pointer" onclick="openNav()"> Our Works</span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</li>
+
+
+            <a href=""><li>Workshop</li></a>
+            <a href=""><li>Agenda</li></a>
+        </ul>
+    </div>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+	<style type="text/css">
+
+		*{
+			margin: 0px;
+			padding: 0px;
+			scroll-behavior: smooth;
+		}
+
+        /* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(46, 64, 83); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(93, 109, 126 ); 
+}
+
+
+
+		@media only screen and (max-width: 768px){
+         
+
+ .dropdown {
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  
+  border-radius: 3px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  color: black;
+  background-color:#d0d3d4 ;
+  border-color: transparent;
+  margin-right: 10px;
+  font-size: 23;
+  margin-top: -3px;
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#BDC3C7;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: +3;
+  font-family: 
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+.formobiles{
+
+  top: -15px;
+  height: 100%;
+}
+
+#sidebar{
+    position: absolute;
+    width:50%;
+    height: 104%;
+    background-color: #000;
+    left: -50%;
+    transition: .4s;
+    z-index: +3; 
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 24px;
+    z-index: +3;
+
+
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 110%;
+    z-index: +3;
+    
+
+}
+
+    .toggle-btn span{
+        width: 45px;
+        height: 4px;
+        background: #000;
+        display: block;
+       margin-top: 4px; 
+
+    }
+
+.firstslide{
+    margin-top: 10%;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 47.9%;
+  background-color: rgb(39, 55, 70 );
+  background-color: rgba(39, 55, 70 , );
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 0.4s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 20px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+         .top{
+
+            background-color: #fbff4a;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            height: 50px;
+            background-size: cover;
+            z-index: +1;
+        }
+		.Home{
+			background-color: #d0d3d4;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px
+
+		}
+		.agenda{
+            background-color: #d0d3d4;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px
+
+
+		}
+		
+		.BillionersNews{
+			background-color: #d0d3d4;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px;
+
+		}
+		.workshop{
+			background-color: #d0d3d4;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px
+		}
+		.toppc{
+            display: none;
+        }
+		
+		.box{
+			background-size: cover;		 
+			background-image: url(https://media.nationalgeographic.org/assets/photos/286/544/d79289cc-50b9-4c1b-95e1-1475a2b7b15c.jpg);
+		}
+
+		.heading{
+			font-size: 34;
+			font-family: catamaran, sans-serif;
+			font-weight: 10;
+			color: #fff;
+		}
+
+		.headsub1{
+			font-size: 20px;
+			margin-top: 40%;
+		}
+
+        .MIDDLEBOX{
+			margin-top: 1%;
+		}
+
+		
+
+		.boxsub{
+			margin-top: 50px;
+		}
+		.boxsubcontent{
+			padding: 10px;
+			background-size: cover;
+			background-color: transparent;
+			border-style: solid;
+			border-width: 0.5px;
+			border-color: white;
+			
+		}
+
+		.box2{
+			background-image:url(background2.jpg);
+			background-size:cover;
+			height: cover;	
+				
+
+		}
+
+		.box2head{
+			background-color: rgb(0,0,0);
+			width: 100%;
+			height: cover;
+			align-content: center;
+			align-items: center;
+			align-self: center;
+
+
+		}
+
+        .box2headname{
+        	font-size: 30;
+        	padding: 10px;
+        }
+
+		.box2div1{
+			background-color: rgb(0,0,0);
+			background-size: cover;
+			width:97%;
+			margin: auto;
+		}
+
+		.box2image1{
+			padding: 2%;
+		}
+
+		.ELONHOME{
+			width: 96%;
+			margin-top: 10px;
+			margin-right: auto;
+			margin-left: auto;
+			height: auto;
+			background-color:#fbff4a;
+			padding: 2%;
+		}
+		.box2sub1{
+			margin: auto;
+			width: 98%;
+			text-align: center;
+		}
+
+        .box2sub1T1{
+			font-size: 28;
+			text-align: left;
+		}
+
+		.box2div2{
+			background-color: rgb(0,0,0);
+			background-size: cover;
+			
+			width:97%;
+			margin: auto;
+		}
+
+        .box2sub2{
+        	float:center;
+        	margin:auto;
+        	margin-top: 25px;
+        	width: 80%;
+        	text-align: center;
+        }
+
+        .box2sub2head1T1{font-size: 28;}
+
+        .box2image2{float: center;
+            margin:auto;
+            padding: 2%;
+        }
+		
+		.jeffhome{
+			height:auto;
+			width: 96%;
+			margin:auto;
+			background-color: #fbff4a;
+			padding: 2%;
+
+		}
+
+        .popup1 {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup1 .popuptext1 {
+  visibility: hidden;
+  width: 20%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -2100%;
+  left: -80%;
+  
+  
+}
+
+/* Popup arrow */
+.popup1 .popuptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup1 .show1 {
+  visibility: visible;
+  -webkit-animation: fadeInp 1s;
+  animation: fadeInp 1s;
+}
+.popup1 a:hover {
+  background-color: #181A1C ;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeInp {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeInp {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+        .showmoreP1{
+        	background-color: rgb(0,0,0);
+        	padding: 10px;
+        	border: solid orange 0.5px;
+        	z-index: +1;
+
+        }
+
+
+		.box2div3{
+			background-color: rgb(0,0,0);
+			background-size: cover ;
+			width:97%;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+		}
+        
+        
+		.box2image3{
+			margin-top: 50px;
+			margin-left:3% ;
+			margin-right:30px;
+			width: 90%;
+			height: auto;
+		}
+
+		.JackMa{
+			
+			width: 98%;
+			height: auto;
+			max-height: 400px;
+			background-color:#fbff4a;
+			padding: 2%;
+		}
+		.box2sub1{
+			margin-left: 4%;
+			margin-right: 50px;
+			margin-top: 50px;
+			height: auto;
+			text-align: center;
+
+		}
+		.box2sub1TJ{
+			font-size: 29;
+			margin-top: 50px;
+			text-align: center;
+		}
+		.JackMaDiv{
+			margin-top: 50px;
+			text-align: center;
+		}
+
+        
+		.box2div4{
+			background-color: rgb(0,0,0);
+			background-size: cover;
+			width:97%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+        .box2sub4{
+        	
+        	margin-top: 0px;
+        	margin-right: 10px;
+        	width: 90%;
+        	padding:6%;
+        	text-align: center;
+        }
+
+        .box2sub4head1T1{font-size: 29;}
+
+        .box2image4{
+        	padding: 2%;
+            width: 90%;
+            position: static;
+            margin: auto;
+        }
+		
+		.spangoogle{
+			
+		}
+		.google{
+			height:auto;
+			max-height: 400px;
+			width: 97%;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			margin-right: 50px;
+			background-color: #fbff4a;
+			padding: 2%;
+			
+			
+			
+		}
+
+
+        .flip {
+  			font-size: 16px;
+  			padding: 10px;
+  			text-align: center;
+  			background-color: #000;
+  			color: orange;
+  			border: solid 0.1px orange;
+  			margin: auto;
+  			
+		}
+
+
+		#panel {
+  			display: none;
+  			z-index: +1;
+  		    
+		}
+
+
+		.box3{
+			background-color: #1C2833;
+			background-size: cover;
+			margin-top: 0px;
+			width: 100%;
+
+		}
+
+         .box3head{
+        	background-color: #000;
+        	width: 80%;
+			height: cover;
+			border-color: #273746 ;
+			border-style: solid;
+        }
+
+        .box3headname{
+            font-size: 30;
+        	padding: 10px;
+        	background-color: transparent;
+        }
+
+		.box3sub1{
+		}
+
+		.float1{
+	    	transition: transform .2s;
+	    	width: 80%;
+	    	margin-left: 10%;
+	    	margin-top: 40px;
+
+	    }
+
+	    .float1:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+        }
+
+	    .float1div{
+	    	border-color: #000;
+	    	border:0.1px;
+	    	border-style: solid;
+	    	background-size: cover;
+	    	background-color: #D0D3D4;
+	    	width: 100%;
+	    }
+
+	    .float1p{
+	    	font-size: 30;
+	    	font-family: Helvetica, Arial, sans-serif  ;
+
+	    	margin-left: 5%;
+	    	margin-top: -4%;
+	    	margin-bottom: 3%;
+	    }
+
+	    .float1img{
+	    	width: 91.9%;
+	    	height:auto;
+	    	padding: 4% 4% 7% 4%;
+	    	background-color: #D0D3D4 ;
+	    	
+	    }
+
+	    
+
+	    .float2{
+	    	transition: transform .2s;
+	    	width: 80%;
+	    	margin-left: 10%;
+	    	margin-top: 40px;
+
+	    }
+
+	    .float2:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+        }
+
+	    .float2div{
+	    	border-color: #000;
+	    	border:0.1px;
+	    	border-style: solid;
+	    	background-size: cover;
+	    	background-color: #D0D3D4;
+	    	width: 100%;
+	    	
+
+	    }
+
+	    .float2p{
+	    	font-size: 30;
+	    	font-family: Helvetica, Arial, sans-serif  ;
+
+	    	margin-left: 5%;
+	    	margin-top: -4%;
+	    	margin-bottom: 3%;
+	    }
+
+	    .float2img{
+	    	width: 91.9%;
+	    	height:auto;
+	    	padding: 4% 4% 7% 4%;
+	    	background-color: #D0D3D4 ;
+	    	
+	    }
+
+	    .row1{
+	    	
+	    }
+
+	    .float3{
+	    	transition: transform .2s;
+	    	width: 80%;
+	    	margin-left: 10%;
+	    	margin-top: 40px;
+
+	    }
+
+	    .float3:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+        }
+
+	    .float3div{
+	    	border-color: #000;
+	    	border:0.1px;
+	    	border-style: solid;
+	    	background-size: cover;
+	    	background-color: #D0D3D4;
+	    	width: 100%;
+	    	
+
+	    }
+
+	    .float3p{
+	    	font-size: 30;
+	    	font-family: Helvetica, Arial, sans-serif  ;
+
+	    	margin-left: 5%;
+	    	margin-top: -4%;
+	    	margin-bottom: 1%;
+	    }
+
+	    .float3img{
+	    	width: 91.9%;
+	    	height:auto;
+	    	padding: 4% 4% 7% 4%;
+	    	background-color: #D0D3D4 ;
+	    	
+	    }
+
+
+	    /* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+        .showmoreP{
+        	background-color: rgb(0,0,0);
+        	padding: 10px;
+        	border: solid orange 0.5px;
+        }
+        
+
+		
+		a{text-decoration: none}
+
+
+
+
+		.footer{
+            background-color: #dedede;
+            background-size: cover;
+            width: 100%;            
+            height: 105px;
+            
+            }
+
+}
+		@media only screen and (min-width: 769px){
+		
+
+
+ .dropdown {
+            float: right;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  
+  border-radius: 3px;
+  color: black;
+  background-color:transparent; ;
+  border-color: transparent;
+  margin-right: 15px;
+  font-size: 23;
+  padding:5px;
+  padding-bottom: 7px;
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#D7DBDD;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D7DBDD;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.formobiles{
+  display: none;
+}
+
+#sidebar{
+    position: fixed;
+    width:300px;
+    height: 100%;
+    background-color: #000;
+    left: -300px;
+    transition: .4s; 
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 24px;
+
+
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 330px;
+
+}
+
+    .toggle-btn span{
+        width: 45px;
+        height: 4px;
+        background: #000;
+        display: block;
+        margin-top:4px; 
+
+    }
+
+
+		.top{
+			background-color: transparent;
+			background-size: cover;
+			font-weight: 400;
+			align-items: center;
+			align-content: center;
+			width: 100%;
+			z-index: +2;
+
+		}
+		.Home{
+			background-color: transparent;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px;
+			float: right;
+			margin-top: 10px;
+
+		}
+		.Home:hover{
+			background-color: #D7DBDD ;
+		}
+		.agenda{
+            background-color: transparent;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px;
+			float: right;
+			margin-top: 10px;
+
+
+		}
+		.agenda:hover{
+			background-color: #D7DBDD ;
+		}
+
+		
+		.BillionersNews{
+			background-color: transparent;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px;
+			float: right;
+			margin-top: 10px;
+
+		}
+		.BillionersNews:hover{
+			background-color: #D7DBDD ;
+		}
+		.workshop{
+			background-color: transparent;
+			border-color:transparent;
+			border-style: solid;
+			padding: 5px;
+			border-radius:3px;
+			float: right;
+			margin-top: 10px;
+		}
+		.workshop:hover{
+			background-color: #D7DBDD ;
+		}
+		
+		.box{
+			background-size: cover;		 
+			
+			background-image: url(https://media.nationalgeographic.org/assets/photos/286/544/d79289cc-50b9-4c1b-95e1-1475a2b7b15c.jpg);
+		}
+		.heading{
+			font-size: 34;
+			font-family: catamaran, sans-serif;
+			font-weight: 10;
+			color: #fff;
+		}
+
+		.headsub1{
+			font-size: 16px;
+			margin-top: 15%;
+		}
+
+        .MIDDLEBOX{
+			margin-top: 1%;
+		}
+
+		.boxsub{
+			margin-top: 80px;
+		}
+		.boxsubcontent{
+			padding: 10px;
+			background-size: cover;
+			
+			background-color: transparent;
+			border-style: solid;
+			border-color: white;
+			
+		}
+
+		
+		.box2{
+			background-image:url(background2.jpg);
+			background-size:cover;	
+			height: cover;
+
+
+		}
+
+		.box2head{
+			
+			width: 400px;
+			height: cover;
+			border-color: white;
+			border-style: solid;
+
+		}
+
+        .box2headname{
+        	font-size: 40;
+        	padding: 10px;
+        	background-color: rgb(0,0,0);
+        }
+
+		.box2div1{
+			background-color: rgb(0,0,0);
+			background-size: cover;
+			height: 500px;
+			width:90%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+        
+        
+		.box2image1{
+			margin-top: 40px;
+			float: left;
+			margin-left:3% ;
+			margin-right:30px;
+			width: 50%;
+			height: auto;
+		}
+
+		.ELONHOME{
+			
+			width: 95%;
+			height: auto;
+			max-height: 400px;
+			background-color:#fbff4a;
+			padding: 2%;
+		}
+		.box2sub1{
+			margin-left: 4%;
+			margin-right: 50px;
+			margin-top: 50px;
+			height: auto;
+
+		}
+		.box2sub1T1{
+			font-size: 34;
+			text-decoration: underline;
+		}
+		.box2div2{
+			background-color: rgb(0,0,0);
+			background-size: cover;
+			height: 558px;
+			width:90%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+        .box2sub2{
+        	
+        	margin-top: 0px;
+        	margin-right: 10px;
+        	width: 90%;
+        	padding:6%;
+        }
+
+        .box2sub2head1T1{font-size: 34;
+        	text-decoration: underline;}
+
+        .box2image2{
+        	padding: 2%;
+            width: 50%;
+            float: right;
+            position: static;
+        }
+		
+		.spanjeff{
+			
+		}
+		.jeffhome{
+			height:auto;
+			max-height: 400px;
+			width: 97%;
+			margin-top: 60px;
+			margin-bottom: 10px;
+			margin-right: 50px;
+			background-color: #fbff4a;
+			padding: 2%;	
+		}
+
+
+.popup1 {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup1 .popuptext1 {
+  visibility: hidden;
+  width: 400%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -2500%;
+  left: -50%;
+  margin-left: -50%;
+  
+}
+
+/* Popup arrow */
+.popup1 .popuptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup1 .show1 {
+  visibility: visible;
+  -webkit-animation: fadeInp 1s;
+  animation: fadeInp 1s;
+}
+.popup1 a:hover {
+  background-color: #181A1C ;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeInp {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeInp {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+        .showmoreP1{
+        	background-color: rgb(0,0,0);
+        	padding: 10px;
+        	border: solid orange 0.5px;
+        	z-index: +1;
+
+        }
+
+
+		.box2div3{
+			background-color: rgb(0,0,0);
+			background-size: cover;
+			height: 550px;
+			width:90%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+        
+        
+		.box2image3{
+			margin-top: 50px;
+			float: left;
+			margin-left:3% ;
+			margin-right:30px;
+			width: 45%;
+			height: auto;
+		}
+
+		.JackMa{
+			
+			width: 98%;
+			height: auto;
+			max-height: 400px;
+			background-color:#fbff4a;
+			padding: 2%;
+		}
+		.box2sub1{
+			margin-left: 4%;
+			margin-right: 50px;
+			margin-top: 50px;
+			height: auto;
+
+		}
+		.box2sub1TJ{
+			font-size: 34;
+			margin-top: 50px;
+		}
+		.JackMaDiv{
+			margin-top: 50px;
+		}
+
+        
+		.box2div4{
+			background-color: rgb(0,0,0);
+			background-size: cover;
+			height: 558px;
+			width:90%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+        .box2sub4{
+        	
+        	margin-top: 0px;
+        	margin-right: 10px;
+        	width: 90%;
+        	padding:6%;
+        }
+
+        .box2sub4head1T1{font-size: 34;}
+
+        .box2image4{
+        	padding: 2%;
+            width: 50%;
+            float: right;
+            position: static;
+        }
+		
+		.spangoogle{
+			
+		}
+		.google{
+			height:auto;
+			max-height: 400px;
+			width: 97%;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			margin-right: 50px;
+			background-color: #fbff4a;
+			padding: 2%;
+			
+			
+			
+		}
+
+
+        .flip {
+  			font-size: 16px;
+  			padding: 10px;
+  			text-align: center;
+  			background-color: #000;
+  			color: orange;
+  			border: solid 0.1px orange;
+  			margin: auto;
+  			cursor: pointer;
+  			
+		}
+
+		.flip:hover{
+			background-color:#181A1C; 
+		}
+
+
+		#panel {
+  			display: none;
+  			z-index: +1;
+  		    
+		}
+
+		.box3{
+			background-color:#1C2833;
+			background-size: cover;
+			
+			width: 100%;
+
+		}
+
+        .box3head{
+        	background-color: #000;
+        	width: 400px;
+			height: cover;
+			border-color: #273746 ;
+			border-style: solid;
+        }
+
+        .box3headname{
+            font-size: 40;
+        	padding: 10px;
+        	background-color: transparent;
+        }
+        
+		.box3sub1{
+
+		}
+	    
+	    .float1{
+	    	transition: transform .2s;
+	    	width: 25%;
+	    	margin-left: 2%;
+	    	margin-top: 40px;
+
+	    }
+
+	    .float1:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+        }
+
+	    .float1div{
+	    	border-color: #000;
+	    	border:0.1px;
+	    	border-style: solid;
+	    	background-size: cover;
+	    	background-color: #D0D3D4;
+	    	width: 100%;
+	    }
+
+	    .float1p{
+	    	font-size: 30;
+	    	font-family: Helvetica, Arial, sans-serif  ;
+
+	    	margin-left: 5%;
+	    	margin-top: -4%;
+	    	margin-bottom: 3%;
+	    }
+
+	    .float1img{
+	    	width: 91.9%;
+	    	height:auto;
+	    	padding: 4% 4% 7% 4%;
+	    	background-color: #D0D3D4 ;
+	    	
+	    }
+
+	    
+
+	    .float2{
+	    	transition: transform .2s;
+	    	width: 25%;
+	    	margin-left: 10%;
+	    	margin-top: 40px;
+
+	    }
+
+	    .float2:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+        }
+
+	    .float2div{
+	    	border-color: #000;
+	    	border:0.1px;
+	    	border-style: solid;
+	    	background-size: cover;
+	    	background-color: #D0D3D4;
+	    	width: 100%;
+	    	
+
+	    }
+
+	    .float2p{
+	    	font-size: 30;
+	    	font-family: Helvetica, Arial, sans-serif  ;
+
+	    	margin-left: 5%;
+	    	margin-top: -4%;
+	    	margin-bottom: 3%;
+	    }
+
+	    .float2img{
+	    	width: 91.9%;
+	    	height:auto;
+	    	padding: 4% 4% 7% 4%;
+	    	background-color: #D0D3D4 ;
+	    	
+	    }
+
+	    .row1{
+	    	display: flex;
+	    }
+
+
+	    .float3{
+	    	transition: transform .2s;
+	    	width: 22%;
+	    	margin-left: 10%;
+	    	margin-top: 40px;
+
+	    }
+
+	    .float3:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+        }
+
+	    .float3div{
+	    	border-color: #000;
+	    	border:0.1px;
+	    	border-style: solid;
+	    	background-size: cover;
+	    	background-color: #D0D3D4;
+	    	width: 100%;
+	    	
+
+	    }
+
+	    .float3p{
+	    	font-size: 30;
+	    	font-family: Helvetica, Arial, sans-serif  ;
+
+	    	margin-left: 5%;
+	    	margin-top: -4%;
+	    	margin-bottom: 1%;
+	    }
+
+	    .float3img{
+	    	width: 91.9%;
+	    	height:auto;
+	    	padding: 4% 4% 7% 4%;
+	    	background-color: #D0D3D4 ;
+	    	
+	    }
+
+        /* Popup container - can be anything you want */
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+        .showmoreP{
+        	background-color: rgb(0,0,0);
+        	padding: 10px;
+        	border: solid orange 0.5px;
+        }
+        .showmoreP:hover{
+        	background-color: #181A1C ;
+        }
+        
+		
+		a{text-decoration: none}
+
+
+.footer{
+            background-color: #dedede;
+            background-size: cover;
+            width: 100%;            
+            height: 207px;
+        }
+            
+}
+
+
+
+	</style>
+</head>
+<body>
+	
+	
+	<div class="box">
+		<center>
+        <span class="heading">
+      	
+      		<br>
+      		<p class="headsub1">Welcome We Are Name</p>
+      		<p class="MIDDLEBOX" >AAAAA BBBB CCCC DDDD <br> </p>
+      		
+      	</span>
+      	</center> 
+      		
+      		
+      		<br>
+      		<center>
+      		<div class ="boxsub">	
+      		<a class="boxsubcontent" href="#BillionersNews"><font  color="white" face="calibri"  >View More
+      		</font></a>
+      	    </div>
+      	    <center>
+      		<br>
+      		<br>
+      		<br>
+      		<br>
+      		<br>
+      		<br> 
+      		<br>
+      		<br>
+      		<br>
+      		<br>
+      		<br>
+      		<br> 
+      		<br>
+      		<br>
+      		<br> 
+      		<br>  
+      		
+     </div>
+    
+     
+    <div class= "box2">
+    	<a name="BillionersNews"></a>
+    	<br>
+    	<br>
+    	<center>
+    	
+    	<div class="box2head" >
+    	    <center> <p class="box2headname"><font face="oswald" color="yellow">Top News Picks</font></p></center>
+        </div>
+    	</center>
+    	<br>
+    
+    	
+    	 <div class="box2div1">
+    		<br>
+               <span class="spanelon">
+    		<div class="box2image1">
+    			<img src="https://cdn-news.warriortrading.com/wp-content/uploads/2018/10/19175956/elon-musk-tesla.jpg" class="ELONHOME">    			
+    		</div>
+    		<div class="box2sub1">
+    			<span class="box2sub1T1">
+    				<div>
+    			<p><a href="elon musk news.html"><font face="times new" color="white" >  Elon Musk</font></a> </p>
+    			<p><a href="elon musk news.html"><font color="white" face="times new" > the CEO of Tesla Hints at</font></a></p>
+    			<p><a href="elon musk news.html"><font color="white" face="times new" > India Entry in 2021</font></a></p>
+                    </div>
+                </span>
+                <br>
+    			<p class="box2sub1p1"><font color="white" face="Courier New" size="3">Electric car maker Tesla Inc's CEO Elon Musk on Friday hinted at the company's entry into India in 2021.
+                <br/><br>
+				"Next year for sure," he said on Twitter responding to a question if there was any progress with regards to the company's India plans.
+				<br><br>
+				"Thanks for waiting!" he said to another Twitter user on the same thread.
+
+				</font></p>
+    		</div>
+    		</span>
+    		
+            
+            
+        </div>
+        
+
+
+
+        <div class="box2div2">
+        	<br>
+        	<span class="spanjeff">
+            
+            <div class="box2image2" >
+            	<img src="E:\jeff bezos home.jpg" class="jeffhome">
+            	<br>
+            </div>
+
+
+            <div class="box2sub2">
+                <span class="box2sub2head1T1">
+            	<p class="box2sub2head1"><a href="jeff bezos news.html"><font face="times new" color="white" >Jeff Bezos Plans To Open a free </font></a></p>
+            	<p class="box2sub2head1"><a href="jeff bezos news.html "><font face="times new" color="white" > preschool  in Oct 19 </font></a></p>
+                </span>
+                <br>
+            	<p class="box2sub2p1"><font face="Courier New" size="3" color="white">Bezos posted a photo of a new classroom with children's books on shelves and carpets on the floor on Instagram, saying the first Bezos Academy set to open on October 19 is just the beginning.
+				<br><br>
+				"This one in Des Moines (Washington) is the first of many free preschools that we'll be opening for underserved children," Bezos said in the post.
+				<br><br>
+
+				</font></p>
+            	<br>
+            	<br>
+            	
+                <div class="showmore1">
+          	<center>
+             
+				<div class="popup1" onclick="myFunction2()"><a class="showmoreP1"><font color="orange">View Instagram</font></a>
+ 				 <span class="popuptext1" id="myPopup1">
+ 				 	
+                     <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CFcMd_RnQ_I/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CFcMd_RnQ_I/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/CFcMd_RnQ_I/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">This classroom is just the beginning. The @bezosacademy opens its doors on Oct. 19th. This one in Des Moines, WA, is the first of many free preschools that we’ll be opening for underserved children. Extra kudos to the team for figuring out how to make this happen even amidst COVID, and to Wesley Homes for stepping up with the facility.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/jeffbezos/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Jeff Bezos</a> (@jeffbezos) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-09-22T13:30:08+00:00">Sep 22, 2020 at 6:30am PDT</time></p></div></blockquote> <script async src="http://www.instagram.com/embed.js"></script>
+
+ 				 </span>
+				</div>
+            </center>
+         
+             
+             <script>
+				// When the user clicks on div, open the popup
+				function myFunction2() {
+ 				 var popup = document.getElementById("myPopup1");
+ 				 popup.classList.toggle("show1");
+				}
+			</script>
+             
+
+<br>
+    	</div>
+            	
+            </div>
+
+            
+            </span>
+
+            
+
+        </div>
+
+        
+
+
+    <div class="showmore1.0" id="panel">   
+        <div class="box2div3" >
+    		<br>
+               <span class="spanJack">
+    		<div class="box2image3">
+    			<img src="https://cdn.wallpapersafari.com/50/59/XiM7TK.jpg" class="ELONHOME JackMa"> 
+
+    		</div>
+    		<div class="box2sub3">
+    	     <span class="box2sub1TJ">
+    		 <div class="JackMaDiv">
+
+    			<p><font face="times new" color="white" >Jack Ma’s Ant Group Wins</font></p>
+    			<p><font color="white" face="times new" >Approval For Dual Listing That</font></p>
+    			<p><font color="white" face="times new" >May Raise $35 Billion</font></p>
+                    </div>
+                </span>
+                <br>
+                <br>
+    			<p class="box2sub1p3"><font color="white" face="Courier New" size="3">Ant Group has received approval from the Hong Kong Stock Exchange for its IPO(initial public offering), according to media reports, clearing the way for what is expected to be the world’s largest public listing.
+                <br/><br>
+                (Ant is an affiliate of Alibaba Group, an $826 billion Chinese firm cofounded by Ma). 
+                <br><br>
+				The Hangzhou-based fintech giant had formally applied in August to sell its shares simultaneously in Hong Kong and Shanghai. 
+				</font></p>
+
+    	    </div>
+    		</span>
+    		
+
+    	
+            
+        </div>
+
+        <div class="box2div4">
+        	
+        	<span class="spangoogle">
+            
+            <div class="box2image4" >
+            	<img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2017/05/google-headquarters-1493886505.jpg" class="google">
+            	<br>
+            </div>
+
+
+            <div class="box2sub4">
+                <span class="box2sub4head1T1">
+            	<p class="box2sub4head1"><font face="times new" color="white" >How Google's 'New' Work Model   </font></p>
+            	<p class="box2sub4head1"><font face="times new" color="white" > Could Help Google Employees To Relieve Stress </font></p>
+                </span>
+                <br>
+            	<p class="box2sub4p1"><font face="Courier New" size="3" color="white">According to CNBC, “Google is rethinking its long-term work options for employees, as most of them say they don’t want to come back to the office full-time.”
+				<br><br>
+				According to a recent survey of Google employees, “sixty-two percent want to return to their offices at some point, but not every day”. For this reason, the company is working on “hybrid” models for future work. 
+				<br><br>
+
+				</font></p>
+            	<br>
+            	<br>
+            </div>
+            </span>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+         
+        <script>
+			function myFunction1() {
+ 			document.getElementById("panel").style.display = "block";
+
+		  }
+		</script>
+        
+    
+    
+    <br>
+    <br>
+    <br>
+           <center><a class="flip" onclick="myFunction1()">Show More</a></center> 
+         <br>
+         <br>
+         <br>
+        </div>
+    
+    	
+    	
+    </div>
+
+    
+        
+     </div>
+
+
+    <div class= box3>
+    	<a name="Agenda"></a>
+        <br>
+        <br>
+        <center>
+        <div class="box3head" >
+    	     <p class="box3headname"><font face="oswald" color="yellow">Try Reading Some Of Our Articles</font></p>
+        </div>
+        </center>
+        <br>
+        <br>
+
+
+
+    	<div class="box3sub1">
+
+    		<span class="row1">
+    		<div class="float1">
+                <div class="float1div">
+                	<a href="jeff bezos.html">
+                	<img src="https://wallpapercave.com/wp/wp4025589.jpg" class="float1img" >
+                	<p class="float1p" style="color: black;">Jeff Bezos</p>
+                    </a>              
+                </div>
+                
+
+    		</div>
+
+         
+    		<div class="float2">
+                <div class="float2div">
+                	<a href="trial.html">
+                	<img src="https://wallpapercave.com/wp/wp2048442.jpg" class="float2img" >
+                	<p class="float2p" style="color: black;">Elon Musk</p>
+                    </a>              
+                </div>
+    		</div>
+    	
+    		
+
+            
+
+             <div class="float3">
+             	<div class="float3div">
+                	<a href="trial.html">
+                	<img src="https://wallpapercave.com/wp/HFsWtAz.jpg" class="float3img" >
+                	<p class="float3p" style="color: black;">Bill Gates</p>
+                    </a>              
+                </div>
+             </div>
+
+             </span>
+
+<br>
+<br>
+          <div class="showmore">
+          	<center>
+             <div class="popup" onclick="myFunctionpopup()"><a class="showmoreP"><font color="orange" >Show More</a></font>
+  <span class="popuptext" id="myPopup">Content Soon To Be Published</span>
+</div>
+				
+            </center>
+         </div>
+             
+             <script>
+				// When the user clicks on div, open the popup
+				function myFunctionpopup() {
+ 				 var popup = document.getElementById("myPopup");
+ 				 popup.classList.toggle("show");
+				}
+			</script>
+             
+
+<br>
+    	</div>
+
+
+    </div>
+
+
+	
+	
+<div class="footer">
+    <label><font size="7" color="black"><center>Highlight</center></label>
+    <ul class="footer-links">
+        <center>
+        <a href="" ><font size="3" color="black" face="arial"><u>Terms and Conditions</u></font></a>
+        <a href="" ><font size="3" color="black" face="arial"><u>Contact Us</u></font></a>
+        <a href="" ><font size="3" color="black" face="arial"><u>Copyrights</u></font></a>
+        <a href="" ><font size="3" color="black" face="arial"><u>Send Us Feedback</u></font></a>
+    </center>
+    </ul>
+</div>
+
+</body>
+</html>
+	
